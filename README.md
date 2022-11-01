@@ -29,10 +29,10 @@
 
 ```css
 <link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png" />
+	rel="icon"
+	type="image/png"
+	sizes="32x32"
+	href="./images/favicon-32x32.png" />
 ```
 Here I learnt how to add a favicon to my website.
 ### Continued development
