@@ -2,8 +2,8 @@
 	--first-card-background: hsl(263, 55%, 52%);
 	--second-card-background: hsl(217, 19%, 35%);
 	--fifth-card-background: hsl(219, 29%, 14%);
-	--clear-background: hsl(0, 0%, 100%);
-	--color-accent: hsl(0, 0%, 81%);
+	--card-white-background: hsl(0, 0%, 100%);
+	--body-background: hsl(0, 0%, 81%);
 	--color-text: hsl(210, 46%, 95%);
 
 	--fs-normal: 13px;
@@ -27,6 +27,7 @@ main {
 body {
 	font-family: "Barlow Semi Condensed", sans-serif;
 	font-size: var(--fs-normal);
+	background-color: var(--body-background);
 }
 
 main {
@@ -35,14 +36,65 @@ main {
 	align-items: center;
 }
 
+.cards {
+	max-width: 1108px;
+	max-height: 576px;
+	display: grid;
+	grid-template-columns: repeat(4, 200px);
+	grid-template-areas:
+		"first first second third"
+		"fourth fifth fifth third ";
+	gap: 30px;
+	/* overflow: hidden;
+	border-radius: 10px; */
+}
+.card {
+	border-radius: 10px;
+}
+
 .card_first {
 	background-color: var(--first-card-background);
+	grid-area: first;
+	color: var(--color-text);
 }
 
 .card_second {
 	background-color: var(--second-card-background);
+	grid-area: second;
+	color: var(--color-text);
+}
+
+.card_third {
+	background-color: var(--card-white-background);
+	grid-area: third;
+	color: var(--second-card-background);
+}
+
+.card_fourth {
+	background-color: var(--card-white-background);
+	grid-area: fourth;
+	color: var(--second-card-background);
 }
 
 .card_fifth {
 	background-color: var(--fifth-card-background);
+	grid-area: fifth;
+	color: var(--color-text);
+}
+
+.card__header {
+}
+
+.card__profile {
+	border-radius: 50%;
+	width: 35px;
+}
+
+.card_first .card__profile {
+	border: 2px solid hsl(263, 100%, 74%);
+	bo
+}
+
+.card_fifth .card__profile {
+	border: 3px solid var(--first-card-background);
 }
