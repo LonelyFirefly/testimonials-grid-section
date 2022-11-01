@@ -1,0 +1,36 @@
+:root {
+	--first-card-background: hsl(263, 55%, 52%);
+	--second-card-background: hsl(217, 19%, 35%);
+	--third-card-background: hsl(219, 29%, 14%);
+	--clear-background: hsl(0, 0%, 100%);
+	--color-accent: hsl(0, 0%, 81%);
+	--color-text: hsl(210, 46%, 95%);
+
+	--fs-normal: 13px;
+	--fs-greater: 2em;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body,
+main {
+	height: 100%;
+}
+
+body {
+	font-family: "Barlow Semi Condensed", sans-serif;
+	font-size: var(--fs-normal);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
