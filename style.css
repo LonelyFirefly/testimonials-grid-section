@@ -53,6 +53,9 @@ main {
 }
 .card {
 	border-radius: 10px;
+	box-shadow: 14px 12px 25px -8px rgba(163, 135, 135, 0.56);
+	-webkit-box-shadow: 14px 12px 25px -8px rgba(163, 135, 135, 0.56);
+	-moz-box-shadow: 14px 12px 25px -8px rgba(163, 135, 135, 0.56);
 	padding: 30px;
 }
 
@@ -132,4 +135,21 @@ main {
 	opacity: 70%;
 	line-height: 20px;
 	font-size: 1.1em;
+}
+
+@media screen and (max-width: 900px) {
+	main {
+		padding: 80px 20px;
+		height: fit-content;
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.card_third {
+		order: 1;
+	}
 }
