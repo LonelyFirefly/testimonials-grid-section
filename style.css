@@ -7,7 +7,7 @@
 	--clr-gray-text: hsl(217, 19%, 35%);
 
 	--fs-normal: 13px;
-	--fs-greater: 1.7em;
+	--fs-greater: 1.7rem;
 	--fw-medium: 500;
 	--fw-bolder: 600;
 }
@@ -41,7 +41,7 @@ main {
 
 .cards {
 	max-width: 1200px;
-	max-height: 576px;
+	/* max-height: 600px; */
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
@@ -117,15 +117,15 @@ main {
 
 .card__credentials {
 	opacity: 50%;
-	font-size: 0.9em;
+	font-size: 0.9rem;
 }
 
 .card_first .card__profile {
-	border: 2px solid hsl(263, 100%, 74%);
+	outline: 2px solid hsl(263, 100%, 74%);
 }
 
 .card_fifth .card__profile {
-	border: 3px solid var(--first-card-background);
+	outline: 3px solid var(--first-card-background);
 }
 
 .card__comment {
@@ -137,7 +137,7 @@ main {
 .card__sub-comment {
 	opacity: 70%;
 	line-height: 20px;
-	font-size: 1.1em;
+	font-size: 1.1rem;
 }
 
 @media screen and (max-width: 900px) {
