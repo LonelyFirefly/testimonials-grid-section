@@ -2,7 +2,8 @@
  
 ## Table of contents
 
--   [Links](#links)
+-   [Overview](#overview)
+	-   [Links](#links)
 -   [My process](#my-process)
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
@@ -14,7 +15,7 @@
 
 ### Links
 
--   Card URL: [Vercel URl](https://3-column-preview-card-lonelyfirefly.vercel.app/)
+-   Card URL: [Vercel URl](https://testimonials-grid-section-nu-mocha.vercel.app/)
 
 ## My process
 
@@ -27,7 +28,7 @@
 
 ### What I learned
 
-```css
+```html
 <link
 	rel="icon"
 	type="image/png"
@@ -57,6 +58,7 @@ In my future projects I really want to have more pracice with:
 -   [W3Schools](https://www.w3schools.com/) - This one really helps me out every time I have difficulty with any css property.
 -   [CS50](https://www.youtube.com/watch?v=NcoBAfJ6l2Q&ab_channel=CS50) - This YouTube channel has countless useful videos. I tend to watch it when I have troubles with Git.
 -   [SmashingMagazine](https://www.smashingmagazine.com/2010/07/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/) - This one is an amazing article which helped me finally understand how To Use CSS3 Media Queries To Create a Mobile Version of Your Website.
+-   [cssgenerator.org](https://cssgenerator.org/) - Here are some useful css tools.
 ## Author
 
 -   LinkedIn - [Daniil Kalugin](https://www.linkedin.com/in/daniil-kalugin)
