@@ -35,6 +35,17 @@
 	href="./images/favicon-32x32.png" />
 ```
 Here I learnt how to add a favicon to my website.
+
+```css
+.card {
+	border-radius: 10px;
+	box-shadow: 14px 12px 25px -8px rgba(163, 135, 135, 0.56);
+	-webkit-box-shadow: 14px 12px 25px -8px rgba(163, 135, 135, 0.56);
+	-moz-box-shadow: 14px 12px 25px -8px rgba(163, 135, 135, 0.56);
+	padding: 30px;
+}
+```
+cssgenerator.org reaaly helped me with box-shadow. You can find lots of useful tools as well there.
 ### Continued development
 
 In my future projects I really want to have more pracice with:
