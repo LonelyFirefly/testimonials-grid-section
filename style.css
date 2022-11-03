@@ -3,11 +3,13 @@
 	--second-card-background: hsl(217, 19%, 35%);
 	--fifth-card-background: hsl(219, 29%, 14%);
 	--card-white-background: hsl(0, 0%, 100%);
-	--body-background: hsl(0, 0%, 81%);
-	--color-text: hsl(210, 46%, 95%);
+	--clr-text: hsl(210, 46%, 95%);
+	--clr-gray-text: hsl(217, 19%, 35%);
 
 	--fs-normal: 13px;
-	--fs-greater: 2em;
+	--fs-greater: 1.7em;
+	--fw-medium: 500;
+	--fw-bolder: 600;
 }
 
 *,
@@ -27,7 +29,8 @@ main {
 body {
 	font-family: "Barlow Semi Condensed", sans-serif;
 	font-size: var(--fs-normal);
-	background-color: var(--body-background);
+	background-color: var(--clr-text);
+	font-weight: var(--fw-medium);
 }
 
 main {
@@ -37,52 +40,57 @@ main {
 }
 
 .cards {
-	max-width: 1108px;
+	max-width: 1200px;
 	max-height: 576px;
 	display: grid;
-	grid-template-columns: repeat(4, 200px);
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	grid-template-areas:
 		"first first second third"
 		"fourth fifth fifth third ";
+	align-content: center;
 	gap: 30px;
-	/* overflow: hidden;
-	border-radius: 10px; */
 }
 .card {
 	border-radius: 10px;
+	padding: 30px;
 }
 
 .card_first {
 	background-color: var(--first-card-background);
 	grid-area: first;
-	color: var(--color-text);
+	color: var(--clr-text);
 }
 
 .card_second {
 	background-color: var(--second-card-background);
 	grid-area: second;
-	color: var(--color-text);
+	color: var(--clr-text);
 }
 
 .card_third {
 	background-color: var(--card-white-background);
 	grid-area: third;
-	color: var(--second-card-background);
+	color: var(--clr-gray-text);
 }
 
 .card_fourth {
 	background-color: var(--card-white-background);
 	grid-area: fourth;
-	color: var(--second-card-background);
+	color: var(--clr-gray-text);
+	padding: 40px;
 }
 
 .card_fifth {
 	background-color: var(--fifth-card-background);
 	grid-area: fifth;
-	color: var(--color-text);
+	color: var(--clr-text);
 }
 
 .card__header {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	margin-bottom: 15px;
 }
 
 .card__profile {
@@ -90,11 +98,38 @@ main {
 	width: 35px;
 }
 
+.card__person {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.card__name {
+	margin-bottom: 3px;
+}
+
+.card__credentials {
+	opacity: 50%;
+	font-size: 0.9em;
+}
+
 .card_first .card__profile {
 	border: 2px solid hsl(263, 100%, 74%);
-	bo
 }
 
 .card_fifth .card__profile {
 	border: 3px solid var(--first-card-background);
+}
+
+.card__comment {
+	font-size: var(--fs-greater);
+	font-weight: var(--fw-bolder);
+	margin-bottom: 15px;
+}
+
+.card__sub-comment {
+	opacity: 70%;
+	line-height: 20px;
+	font-size: 1.1em;
 }
