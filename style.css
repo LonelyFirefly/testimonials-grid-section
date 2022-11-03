@@ -61,6 +61,9 @@ main {
 
 .card_first {
 	background-color: var(--first-card-background);
+	background-image: url("../images/bg-pattern-quotation.svg");
+	background-repeat: no-repeat;
+	background-position: right 80px top;
 	grid-area: first;
 	color: var(--clr-text);
 }
